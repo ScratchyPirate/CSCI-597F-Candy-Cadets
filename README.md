@@ -1,4 +1,6 @@
 # Final project work for CSCI 597F
+![image](https://github.com/ScratchyPirate/CSCI-597F-Candy-Cadets/blob/main/assets/candycadet.png)
+
 ## Candy Cadets
 - John Sbur (project lead)
 - Natalie Gleason (developer & engineer)
