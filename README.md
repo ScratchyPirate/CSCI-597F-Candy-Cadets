@@ -7,6 +7,12 @@
 ## Deliverable
 A duckiebot-based robotic system that will deliver candy to a human.
 
+## Components
+- Duckiebot.
+- 3D printed tray for containing candy payload.
+- 3D printed landing pad for candy to be delivered to.
+- Candy dispenser.
+
 ## Resources
 [Duckietown documentation](https://docs.duckietown.com/ente/duckietown-manual/welcome-to-the-duckietown-manual.html)
 
