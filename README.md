@@ -21,11 +21,12 @@ A duckiebot-based robotic system that will deliver candy to a human.
 
 ### Duckiebot Specifics
 
-#### Learning Duckiebot
+#### Coding the DuckieBot
 - [Duckietown documentation](https://docs.duckietown.com/ente/duckietown-manual/welcome-to-the-duckietown-manual.html)
 - [Coding Duckietbot with ROS](https://docs.duckietown.com/ente/duckietown-manual/70-developer-manual/ros/introduction-to-using-ros-with-duckietown.html#dtproject-ros)
+- [Setting up a Duckiebot project](https://docs.duckietown.com/ente/duckietown-manual/70-developer-manual/ros/create-new-ros-project.html)
 
-#### Setup Resources
+#### Hardware Resources
 - [Duckiebot camera calibration](https://docs.duckietown.com/ente/duckietown-manual/20-operations/04-calibrations/duckiebot-camera-calibration.html)
 - [Duckiebot wheel calibration](https://docs.duckietown.com/ente/duckietown-manual/20-operations/04-calibrations/duckiebot-motor-odometry-calibration.html)
 - [Duckiebot hardware debugging](https://docs.duckietown.com/ente/duckietown-manual/21-testing-debugging/02-components-testing/index.html)
