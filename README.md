@@ -18,6 +18,8 @@ A duckiebot-based robotic system that will deliver candy to a human.
 ## Resources
 [Duckietown documentation](https://docs.duckietown.com/ente/duckietown-manual/welcome-to-the-duckietown-manual.html)
 
+[Duckietown instructor resources](https://docs.duckietown.com/ente/duckietown-manual/80-instructor-manual/course-design-considerations/prerequisites/pre-instructors.html): Actually really great resource since they assume no prior knowledge when explaining pre-requisites!
+
 [CSCI 597F Final Project - Google Drive](https://drive.google.com/drive/folders/1hRoMSuwKlewXq7G9C-CAv0jkp49Vuu00?usp=sharing)
 
 ### Duckiebot setup resources
