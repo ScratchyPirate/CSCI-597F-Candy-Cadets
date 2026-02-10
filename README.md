@@ -21,12 +21,13 @@ A duckiebot-based robotic system that will deliver candy to a human.
 
 ### Coding the DuckieBot
 - [Duckietown documentation](https://docs.duckietown.com/ente/duckietown-manual/welcome-to-the-duckietown-manual.html)
-- [Coding Duckietbot with ROS](https://docs.duckietown.com/ente/duckietown-manual/70-developer-manual/ros/introduction-to-using-ros-with-duckietown.html#dtproject-ros)
 - [Setting up a Duckiebot project](https://docs.duckietown.com/ente/duckietown-manual/70-developer-manual/ros/create-new-ros-project.html)
-- [Rospy](https://wiki.ros.org/rospy): Python ROS package.
+
 
 #### ROS
+- [Coding Duckietbot with ROS](https://docs.duckietown.com/ente/duckietown-manual/70-developer-manual/ros/introduction-to-using-ros-with-duckietown.html#dtproject-ros) 
 - [Catkin](https://wiki.ros.org/catkin/Tutorials): Workspaces for ROS.
+- [Rospy](https://wiki.ros.org/rospy): Python ROS package.
 
 ### Hardware Resources
 - [Duckiebot camera calibration](https://docs.duckietown.com/ente/duckietown-manual/20-operations/04-calibrations/duckiebot-camera-calibration.html)
