@@ -20,6 +20,8 @@ A duckiebot-based robotic system that will deliver candy to a human.
 [CSCI 597F Final Project - Google Drive](https://drive.google.com/drive/folders/1hRoMSuwKlewXq7G9C-CAv0jkp49Vuu00?usp=sharing)
 
 ### Coding the DuckieBot
+- [Duckietown shell](https://github.com/duckietown/duckietown-shell)
+- [More on Duckietown shell](https://docs.duckietown.com/daffy/devmanual-software/basics/development/dts-duckietown-shell.html)
 - [Duckietown documentation](https://docs.duckietown.com/ente/duckietown-manual/welcome-to-the-duckietown-manual.html)
 - [Setting up a Duckiebot project](https://docs.duckietown.com/ente/duckietown-manual/70-developer-manual/ros/create-new-ros-project.html)
 
