@@ -38,6 +38,12 @@ A duckiebot-based robotic system that will deliver candy to a human.
 
 ## Implementation Details
 
+### Mapping
+1. homeography
+2. feature extraction -> mapping
+3. kalman filter to remove noise
+4. pose graph for SLAM
+
 ### Path Planning
 April Tags. Explore until found, do not explore previously explored areas.
 
