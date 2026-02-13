@@ -36,4 +36,9 @@ A duckiebot-based robotic system that will deliver candy to a human.
 - [Duckiebot wheel calibration](https://docs.duckietown.com/ente/duckietown-manual/20-operations/04-calibrations/duckiebot-motor-odometry-calibration.html)
 - [Duckiebot hardware debugging](https://docs.duckietown.com/ente/duckietown-manual/21-testing-debugging/02-components-testing/index.html)
 
+## Implementation Details
+
+### Path Planning
+April Tags. Explore until found, do not explore previously explored areas.
+
 
