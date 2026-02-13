@@ -1,5 +1,6 @@
 docs/build
 *pyc
+*Zone.Identifier
 
 # documentation artifacts
 html/*
