@@ -24,7 +24,7 @@ A duckiebot-based robotic system that will deliver candy to a human.
 - [More on Duckietown shell](https://docs.duckietown.com/daffy/devmanual-software/basics/development/dts-duckietown-shell.html)
 - [Duckietown documentation](https://docs.duckietown.com/ente/duckietown-manual/welcome-to-the-duckietown-manual.html)
 - [Setting up a Duckiebot project](https://docs.duckietown.com/ente/duckietown-manual/70-developer-manual/ros/create-new-ros-project.html)
-- [Commands to Communicate with DuckieBot](github.com/MRRP-lab/equipment-info/blob/main/duckiebots/Duckietown%20Shell%20Commands.txt)
+- [Commands to Communicate with DuckieBot](https://github.com/MRRP-lab/equipment-info/blob/main/duckiebots/Duckietown%20Shell%20Commands.txt)
 
 
 #### ROS
