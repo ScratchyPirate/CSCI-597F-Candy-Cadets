@@ -47,6 +47,7 @@ A duckiebot-based robotic system that will deliver candy to a human.
 4. pose graph for SLAM
 
 ### Path Planning
-April Tags. Explore until found, do not explore previously explored areas.
+1. RRT*
+2. April Tags. Explore until found, do not explore previously explored areas.
 
 
