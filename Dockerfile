@@ -1,7 +1,7 @@
 # parameters
-ARG REPO_NAME="<REPO_NAME_HERE>"
-ARG DESCRIPTION="<DESCRIPTION_HERE>"
-ARG MAINTAINER="<YOUR_FULL_NAME> (<YOUR_EMAIL_ADDRESS>)"
+ARG REPO_NAME="CSCI-597F-Candy-Cadets"
+ARG DESCRIPTION="Candybot 3000"
+ARG MAINTAINER="Wil Apollo Zuber (zuberw@wwu.edu)"
 # pick an icon from: https://fontawesome.com/v4.7.0/icons/
 ARG ICON="cube"
 
