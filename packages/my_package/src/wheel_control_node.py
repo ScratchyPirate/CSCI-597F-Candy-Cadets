@@ -29,7 +29,7 @@ class WheelControlNode(DTROS):
         # construct publisher
         self._publisher = rospy.Publisher(wheels_topic, WheelsCmdStamped, queue_size=1)
 
-        # construct subscriber for other nodes to use
+        # construct subscriber for other nodes to use 
         # self._subscriber = rospy.Subscriber('chatter', String, self.callback)
 
 
