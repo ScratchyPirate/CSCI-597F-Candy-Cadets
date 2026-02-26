@@ -2,7 +2,7 @@
 ![image](https://github.com/ScratchyPirate/CSCI-597F-Candy-Cadets/blob/main/assets/candycadet.png) 
 
 ## Candy Cadets
-- John Sbur (project lead)
+- John Sbur (project lead) 
 - Natalie Gleason (developer & engineer)
 - Wil Apollo Zuber (developer)
 
