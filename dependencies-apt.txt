@@ -1,1 +1,4 @@
 # LIST YOUR APT PACKAGES HERE
+ros-ente-navigation2
+ros-ente-nav2-bringupos
+ros-ente-slam-toolbox
