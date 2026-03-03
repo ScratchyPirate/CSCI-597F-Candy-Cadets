@@ -6,11 +6,13 @@ import rospy
 from duckietown.dtros import DTROS, NodeType
 from duckietown_msgs.msg import WheelsCmdStamped
 from std_msgs.msg import String
+import std_msgs
 
 
 # angular velocities for each wheel (quarter rotation a second)
 W_LEFT = 1/4 * (2 * math.pi)
 W_RIGHT = 1/4 * (2 * math.pi)
+WHEEL_RADIUS = 3.25 # cm Calculated using caliper, if needed switch to documentation's measurement 3.18
 
 class WheelControlNode(DTROS):
 
@@ -50,6 +52,7 @@ class WheelControlNode(DTROS):
 
         return output # return the dictionary containing all arguments and their corresponding values
 
+    # velocity = angular velocity * radius
     def duration_from_distance(distance: float, velocity):
         """Given a distance in cm and using velocity
         determine the length of time needed to reach that distance"""
@@ -57,12 +60,13 @@ class WheelControlNode(DTROS):
         return -1
     
     def duration_from_angle(distance: float, left_vel, right_vel):
-        """Given an angle and left and right wheel velocities
+        """Given an angle to turn and left and right wheel velocities
         determine the length of time needed to turn that amount"""
         # TODO
         return -1
 
-    def run(self, movement_type: std_msgs.msg.String):
+    # def run(self, movement_type: std_msgs.msg.String):
+    def run(self, movement_type: str):
         """
             This method sets the robot's wheels to move
 
@@ -78,32 +82,34 @@ class WheelControlNode(DTROS):
         arguments dictionary has the following form:
         {"movement_type": "forward", "argument": 3.14159}
         """
+        # arguments = self.parse_yaml(movement_type.data)
+
+        # movement_type = arguments["movement_type"]
         arguments = self.parse_yaml(movement_type)
-        
-        match arguments["movement_type"]: # check the value of movement_type
-            case "forward":
+        movement_type = argument["movement_type"]
+
+        if movement_type == "forward": # check the value of movement_type
+            left_wheel_vel = self._vel_left
+            right_wheel_vel = self._vel_right
+            duration = self.duration_from_distance(arguments["argument"], left_wheel_vel) # find the duration to move based on velocity and distance
+        elif movement_type == "turn":
+            """
+            if turning, move the wheels at the velocity 
+            needed to attain the specified angle of rotation.
+            """
+            if arguments["argument"] > 0: # if positive angle, turn clockwise
                 left_wheel_vel = self._vel_left
+                right_wheel_vel = -self._vel_right
+            else: # if negative angle, turn counter-clockwise
+                left_wheel_vel = -self._vel_left
                 right_wheel_vel = self._vel_right
-                duration = self.duration_from_distance(arguments["argument"], left_wheel_vel) # find the duration to move based on velocity and distance
-            case "turn":
-                """
-                if turning, move the wheels at the velocity 
-                needed to attain the specified angle of rotation.
-                """
-                if arguments["argument"] > 0: # if positive angle, turn clockwise
-                    left_wheel_vel = self._vel_left
-                    right_wheel_vel = -self._vel_right
-                else: # if negative angle, turn counter-clockwise
-                    left_wheel_vel = -self._vel_left
-                    right_wheel_vel = self._vel_right
-                duration = self.duration_from_angle(arguments["argument"], left_wheel_vel, right_wheel_vel) # find the duration to move based on velocity and distance
-                
-            # default case if no other case matches
-            case _:
-                print(f"Incorrect argument given to run. Format should be the following:",
-                      f"movement_type:<type>",
-                      f"arg:<argument>", sep="\n")
-                return 
+            duration = self.duration_from_angle(arguments["argument"], left_wheel_vel, right_wheel_vel) # find the duration to move based on velocity and distance     
+        # default case if no other case matches
+        else:
+            print(f"Incorrect argument given to run. Format should be the following:",
+                    f"movement_type:<type>",
+                    f"arg:<argument>", sep="\n")
+            return 
         
         # publish 10 messages every second (10 Hz) for duration of time
         rate = rospy.Rate(0.1) # 10 Hz
@@ -121,6 +127,6 @@ if __name__ == '__main__':
     # create the node
     node = WheelControlNode(node_name='wheel_control_node')
     # run node
-    node.run()
+    node.run(std_msgs.msg.String(args={"data":"movement_type:forward\narg:10"}))
     # keep the process from terminating
     rospy.spin()
