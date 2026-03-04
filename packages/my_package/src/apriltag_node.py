@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+'''
+    apriltag_node.py
+    Created: 3.4.26
+    Purpose: 
+        This file defines a node that reads apriltags
+
+    Credit: https://github.com/ekhumbata/Adventures-in-Duckietown/blob/main/exercise-5/packages/apriltag/src/apriltag_node.py
+'''
 import dt_apriltags
 import cv2
 import tf

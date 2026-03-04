@@ -1,6 +1,12 @@
-# Source: https://github.com/ekhumbata/Adventures-in-Duckietown/blob/main/exercise-2/Exercise%201.3/packages/my_package/src/odometry_node.py
-# (MIT License)
 #!/usr/bin/env python3
+'''
+    wheel_encoder_node.py
+    Created: 3.4.26
+    Purpose: 
+        This file defines a node that gets wheel velocity
+
+    Credit: https://github.com/ekhumbata/Adventures-in-Duckietown/blob/main/exercise-2/Exercise%201.3/packages/my_package/src/odometry_node.py
+'''
 import numpy as np
 import os
 import rospy
