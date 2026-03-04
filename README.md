@@ -2,7 +2,7 @@
 ![image](https://github.com/ScratchyPirate/CSCI-597F-Candy-Cadets/blob/main/assets/candycadet.png) 
 
 ## Candy Cadets
-- John Sbur (project lead)
+- John Sbur (project lead) 
 - Natalie Gleason (developer & engineer)
 - Wil Apollo Zuber (developer)
 
@@ -43,7 +43,7 @@ A duckiebot-based robotic system that will deliver candy to a human.
 ### Mapping
 1. homeography
 2. feature extraction -> mapping
-3. kalman filter to remove noise
+3. [kalman filter to remove noise](https://filterpy.readthedocs.io/en/latest/kalman/KalmanFilter.html)
 4. pose graph for SLAM
 
 ### Path Planning

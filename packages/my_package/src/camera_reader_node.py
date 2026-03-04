@@ -6,7 +6,7 @@
         This file defines a node that reads camera data
         from the Duckiebot and displays the camera feed in a cv2 window.
 
-    Credit: https://docs.duckietown.com/ente/devmanual-software/beginner/ros/wheel-control.html
+    Credit: https://docs.duckietown.com/ente/devmanual-software/beginner/ros/camera-reader.html
 """
 
 #   Imports
