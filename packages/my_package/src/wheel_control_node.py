@@ -7,7 +7,10 @@ from duckietown.dtros import DTROS, NodeType
 from duckietown_msgs.msg import WheelsCmdStamped
 from std_msgs.msg import String
 import std_msgs
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/john-dev-2
 
 # angular velocities for each wheel (quarter rotation a second)
 W_LEFT = 1/4 * (2 * math.pi)

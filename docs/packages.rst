@@ -1,5 +1,5 @@
-Duckietown Module: REPOSITORY_NAME_HERE
-=======================================
+Duckietown Module: dt-core
+==========================
 
 .. toctree::
    :glob:
