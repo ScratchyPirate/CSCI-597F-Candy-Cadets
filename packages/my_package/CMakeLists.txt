@@ -3,6 +3,7 @@ project(my_package)
 
 find_package(catkin REQUIRED COMPONENTS
   rospy
+  roscpp
 )
 
 catkin_package()

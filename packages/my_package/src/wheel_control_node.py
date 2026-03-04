@@ -6,7 +6,7 @@ import rospy
 from duckietown.dtros import DTROS, NodeType
 from duckietown_msgs.msg import WheelsCmdStamped
 from std_msgs.msg import String
-
+import std_msgs
 
 # angular velocities for each wheel (quarter rotation a second)
 W_LEFT = 1/4 * (2 * math.pi)
@@ -79,6 +79,8 @@ class WheelControlNode(DTROS):
         {"movement_type": "forward", "argument": 3.14159}
         """
         arguments = self.parse_yaml(movement_type)
+        
+
         
         match arguments["movement_type"]: # check the value of movement_type
             case "forward":
